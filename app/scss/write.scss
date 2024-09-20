@@ -1,0 +1,56 @@
+.write{
+    width: 100%;
+    margin-top: 121px;
+    background: url(../images/dist/write__back.png) center no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 24px 98px 24px 329px;
+        position: relative;
+        align-items: center;
+        img{
+            position: absolute;
+            width: 177px;
+            height: 165px;
+            bottom: 0;
+            left: 98px;
+        }
+        &-text{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            span{
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 38.15px;
+                text-align: left;
+                color: var(--text);
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21.8px;
+                text-align: left;
+                max-width: 571px;
+                color: var(--text);
+            }
+        }
+        &-btn{
+            width: 236px;
+            height: 67px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFB43C;
+            border-radius: 9px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 21.8px;
+            text-align: left;
+            color: var(--text);
+        }
+    }
+}

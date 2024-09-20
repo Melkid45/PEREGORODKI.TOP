@@ -1,0 +1,40 @@
+:root{
+    --main-font: "Open Sans", sans-serif;
+    --soft-font: "Oswald", sans-serif;
+    --btn: #1273FF;
+    --title: linear-gradient(86.82deg, #292929 0%, #313131 11.57%, #707070 19.15%, #292929 30.9%, #727272 44.14%, #3C3C3C 54.6%, #636363 60.67%, #4A4A4A 73.23%);
+    --text: #292929;
+}
+@import './reset';
+body{
+    max-width: 1440px;
+    background: #FFFFFF;
+    font-family: var(--main-font);
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+.btn__hover{
+    transition: all 0.3s ease;
+}
+.btn__hover:hover{
+    background: #0362EC;
+}
+.btn__hover-yellow{
+    transition: all 0.3s ease;
+}
+.btn__hover-yellow:hover{
+    color: #fff;
+}
+.hidden{
+    overflow: hidden;
+}
+.mob{
+    display: none !important;
+}
+.desk{
+    display: flex !important;
+}

@@ -1,0 +1,50 @@
+.footer{
+    width: 100%;
+    margin-top: 24px;
+    padding: 23px 0px;
+    background: var(--text);
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        &-logo{
+            display: flex;
+            align-items: center;
+            gap: 17px;
+            img{
+                width: 42px;
+                height: 48.06px;
+            }
+            &-text{
+                display: flex;
+                flex-direction: column;
+                span{
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 27.24px;
+                    text-align: left;
+                    color: #fff;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16.34px;
+                    letter-spacing: -0.02em;
+                    text-align: left;
+                    color: #fff;
+                }
+            }
+        }
+        &-copy{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21.79px;
+                text-align: right;
+                color: #A6A6A6;
+            }
+        }
+    }
+}

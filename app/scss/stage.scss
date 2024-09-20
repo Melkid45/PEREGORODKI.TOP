@@ -1,0 +1,111 @@
+.stage{
+    width: 100%;
+    margin-top: 100px;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        &-title{
+            font-family: var(--soft-font);
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 58.8px;
+            text-align: center;
+            background: var(--title);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        &-block{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            &-item{
+                width: 300px;
+                height: 173px;
+                background: url(../images/dist/stage__back.png) center no-repeat;
+                box-shadow: -2px 3px 9.2px 0px #00000026;
+                background-size: cover;
+                border-radius: 14px;
+                padding: 18px 21px 36px 21px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                img{
+                    max-width: 64px;
+                    max-height: 64px;
+                }
+                &-num{
+                    position: absolute;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    top: 0;
+                    right: 0;
+                    background: #1273FF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .circle{
+                        width: 38px;
+                        height: 38px;
+                        background: transparent;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        border: 1px solid #90BDFF;
+                        font-family: var(--soft-font);
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 35.28px;
+                        text-align: center;
+                        color: #fff;
+                    }
+                }
+            }
+            &-item:nth-child(4){
+                .stage__body-block-item-num{
+                    background: #FFB43C;
+                    .circle{
+                        border-color: #FFED86;
+                    }
+                }
+            }
+            &-item:nth-child(8){
+                .stage__body-block-item-num{
+                    background: #00E942;
+                    .circle{
+                        border-color: #6FFF98;
+                    }
+                }
+            }
+        }
+        &-desc{
+            display: flex;
+            gap: 23px;
+            padding-left: 240px;
+            align-items: center;
+            padding-right: 240px;
+            svg{
+                width: 99px;
+                height: 44px;
+                margin-top: -15px;
+            }
+            p{
+                font-family: var(--soft-font);
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 35.28px;
+                text-align: center;
+                color: var(--text);
+                text-transform: uppercase;
+                margin-top: 20px;
+                span{
+                    color: var(--btn);
+                }
+            }
+        }
+    }
+}
